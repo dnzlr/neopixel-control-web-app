@@ -1,0 +1,72 @@
+body {
+    background: #fff;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+.onOffButton {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 36px;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 50%
+}
+.button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.gradient-button {
+    font-size: 16px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    border: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.color-picker {
+    position: relative;
+}
+.color-indicator {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    background-color: #fff;
+    border-radius: 20px;
+    vertical-align: middle;
+}
+
+#color-picker {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 40px;
+}
+
+.onOffButton1 {background-color:black;} /* OFF */
+.onOffButton2 {background-color:orange;color:black;} /* ON */
+.button3 {background-color:red;} /* Red */
+.button4 {background-color:green;} /* Green */
+.button5 {background-color: #048CBA;} /* Blue */
+.button6 {background-color:purple;} /* Pink */
+.button7 {background-color:black;} /* Refresh*/
+
+.gradient-button1 {background-image: linear-gradient(#e66465 0%, #9198e5 100%)}
+
+
+
