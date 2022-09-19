@@ -3,12 +3,12 @@
     <head>
         <meta charset="utf-8">
         <title>Z24 Kitchen Light Controller</title>
-        <link rel="stylesheet" href='../static/style.css?v=1.33' />
+        <link rel="stylesheet" href='../static/style.css?v=1.31' />
             <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
         <center>
-            <h1> Benvenuto:<br>Informazioni di Zossi24 </h1>
+            <h1> Informazioni di Zossi24 </h1>
         <!--This is a comment. Comments are not displayed in the browser-->
         <!-- <a href="/hello/Zossi">Hey you Zossi, Welcome!</a> -->
         <h2> Controllo della Luce </h2>
@@ -16,7 +16,7 @@
 			<a href="off"class="onOffButton onOffButton1">OFF</a>
 			<a href="on" class="onOffButton onOffButton2">ON </a>  
 		</h3>
-        <h2> Bella Luce di Colore </h2>
+        <h2> Bella Luce di Colore <em><span style="color: grey">beta</span></em> </h2>
 		<h3>  
 			<a href="red"class="button button3">RED</a>
 			<a href="green"class="button button4">GREEN</a>
@@ -26,25 +26,22 @@
 		</h3>
 
         <div class="color-picker"></div>
-        <div id="color-indicator" class="color-indicator"></div>
+        <!-- <div id="color-indicator" class="color-indicator"></div> -->
         <div id="color-picker"></div>
         
         
         <script src="https://cdn.jsdelivr.net/npm/@jaames/iro@5"></script>
         <script>
-            let colorIndicator = document.getElementById('color-indicator');
-            const colorPicker = new iro.ColorPicker("#color-picker", {width:150, color: "#fff"});
+            //let colorIndicator = document.getElementById('color-indicator');
+            const colorPicker = new iro.ColorPicker("#color-picker", {width:250, color: "#fff"});
 
             //colorPicker.on('color:init', 'color:change', function(color) {
             colorPicker.on('color:change', function(color) {
                 colorIndicator.style.backgroundcolor = color.hexString;
                 console.log(color.hexString);
-
                 //body.style.backgroundcolor = color.hexString;
-
                 //setLedColor = color.hexString;
                 //let ledColor = args[0].toRGBA();
-			    //<a href="red"class="button button3">RED</a>
             });
 
         </script>

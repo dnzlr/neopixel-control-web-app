@@ -2,6 +2,7 @@ body {
     background: #fff;
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
     color: black;
 }
 .onOffButton {
@@ -11,10 +12,10 @@ body {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 36px;
+  font-size: 40px;
   margin: 4px 2px;
   cursor: pointer;
-  width: 50%
+  width: 25%
 }
 .button {
   border: none;
@@ -23,13 +24,13 @@ body {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 14px;
   margin: 4px 2px;
   cursor: pointer;
 }
 
 .gradient-button {
-    font-size: 16px;
+    font-size: 14px;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
@@ -43,6 +44,7 @@ body {
 .color-picker {
     position: relative;
 }
+
 .color-indicator {
     display: inline-block;
     width: 200px;
